@@ -1,0 +1,108 @@
+:root{
+    --primary-color: #2f5792;
+    --secondary-color: #49bcff;
+    --text-color: #bdbdbd;
+}
+.top-bar{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.top-bar .collapse{
+    background-color: var(--primary-color);
+}
+.top-bar .nav-item .dropdown-item{
+    color: black;
+}
+.top-bar .nav-item a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+.top-bar .container-fluid{
+    padding: 0;
+}
+.top-bar .get-started{
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    font-size: 1.3rem;
+}
+.mobile-header{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.hero-sec{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.hero-sec p{
+    color: var(--text-color);
+}
+.hero-sec .btn{
+    color: #fff;
+    border-radius: 20px;
+}
+.hero-sec .get-started{
+    background-color: var(--secondary-color);
+}
+.sponser-sec .sponser{
+    color: black;
+}
+.about-us-tag::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    bottom: -10px;
+    left: calc(50% - 60px);
+    background-color: #ddd;
+}
+.about-us-tag{
+    color: var(--primary-color);
+    font-weight: bolder;
+    position: relative;
+}
+.about-us-tag::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: -10px;
+    left: calc(50% - 20px);
+    background-color: var(--secondary-color);
+}
+.about-us .about-para {
+    color: #585858;
+}
+.about-us .about-para li{
+    list-style: none ;
+}
+.about-us .double-check{
+    color: var(--secondary-color);
+}
+.about-us .learn-more{
+    border: var(--secondary-color) 2px solid;
+    border-radius: 5px;
+    color: var(--secondary-color);
+}
+
+
+._desktop{
+    display: block;
+}
+._mobile{
+    display: none;
+}
+@media only screen and (max-width:768px) {
+    ._desktop{
+        display: none;
+    }
+    ._mobile{
+        display: block;
+    }
+}
